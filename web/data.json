@@ -1,0 +1,41 @@
+[
+	{
+		"id": 101,
+		"name": "Bún bò Huế O Hoa",
+		"district": "Quận 3",
+		"category": "Đồ nước",
+		"address": "25 Nguyễn Đình Chiểu, Quận 3, TP.HCM",
+		"description": "Nước lèo đậm vị, bò mềm, chả cua thơm.",
+		"price": "50k-80k",
+		"image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=1200&auto=format&fit=crop",
+		"lat": 10.78,
+		"lng": 106.69
+	},
+	{
+		"id": 102,
+		"name": "Tokbokki Hàn Xẻng",
+		"district": "Quận 7",
+		"category": "Món Hàn",
+		"address": "12 Tân Mỹ, Quận 7",
+		"description": "Tokbokki cay cay, kèm chả cá và trứng.",
+		"prices": [
+			{ "name": "Tokbokki thường", "price": "55k" },
+			{ "name": "Tokbokki phô mai", "price": "75k" }
+		],
+		"image": "https://images.unsplash.com/photo-1580541631950-72863fd96f9c?q=80&w=1200&auto=format&fit=crop",
+		"lat": 10.7365,
+		"lng": 106.721
+	},
+	{
+		"id": 103,
+		"name": "Cơm tấm Cô Ba",
+		"district": "Quận 1",
+		"category": "Đồ khô",
+		"address": "88 Nguyễn Thái Học, Quận 1",
+		"description": "Sườn nướng mật ong, bì chả đầy đặn.",
+		"price": "45k-65k",
+		"image": "https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=1200&auto=format&fit=crop",
+		"lat": 10.772,
+		"lng": 106.698
+	}
+]
