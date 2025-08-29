@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chọn Quán Ăn</title>
+  <meta name="description" content="Tìm quán ăn theo quận và loại món">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+  <header class="app-header">
+    <div class="container">
+      <h1>Chọn Quán Ăn</h1>
+      <p class="subtitle">Lọc theo quận và thể loại đồ ăn</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters" aria-label="Bộ lọc">
+      <div class="filters-row">
+        <div class="filter">
+          <label for="searchInput">Tìm kiếm</label>
+          <input id="searchInput" type="search" placeholder="Tên quán, món, địa chỉ..." autocomplete="off">
+        </div>
+        <div class="filter">
+          <label for="districtSelect">Quận</label>
+          <select id="districtSelect">
+            <option value="">Tất cả quận</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="sortSelect">Sắp xếp</label>
+          <select id="sortSelect">
+            <option value="recommended">Đề xuất</option>
+            <option value="rating_desc">Đánh giá: cao → thấp</option>
+            <option value="price_asc">Giá: rẻ → đắt</option>
+            <option value="price_desc">Giá: đắt → rẻ</option>
+            <option value="name_asc">Tên: A → Z</option>
+          </select>
+        </div>
+        <div class="filter actions">
+          <button id="clearBtn" type="button">Xóa lọc</button>
+        </div>
+      </div>
+
+      <div class="categories" id="categoriesContainer" aria-label="Thể loại đồ ăn">
+        <!-- checkboxes rendered by JS -->
+      </div>
+    </section>
+
+    <section aria-live="polite" aria-busy="false">
+      <div id="stats" class="stats">Đang tải dữ liệu...</div>
+      <div id="results" class="results-grid"></div>
+    </section>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="card">
+      <div class="card-header">
+        <h3 class="card-title"></h3>
+        <div class="rating"></div>
+      </div>
+      <div class="card-meta">
+        <span class="district"></span>
+        <span class="price"></span>
+      </div>
+      <div class="card-categories"></div>
+      <p class="address"></p>
+      <div class="card-actions">
+        <a class="map-link" target="_blank" rel="noopener">Bản đồ</a>
+        <a class="phone-link" target="_blank" rel="noopener">Gọi</a>
+      </div>
+    </article>
+  </template>
+
+  <footer class="app-footer">
+    <div class="container">
+      <small>Made for you • Không có dữ liệu thực — chỉ là ví dụ</small>
+    </div>
+  </footer>
+
+  <script src="./assets/js/app.js" type="module"></script>
+  
+</body>
+</html>

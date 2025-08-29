@@ -1,0 +1,80 @@
+[
+  {
+    "id": "q1",
+    "name": "Bún Chả Hà Nội Cô Ba",
+    "district": "Quận 1",
+    "categories": ["đồ nước", "món việt"],
+    "rating": 4.5,
+    "priceLevel": 2,
+    "address": "123 Lê Lợi, Quận 1",
+    "phone": "+84901234567",
+    "mapUrl": "https://www.google.com/maps",
+    "featured": true
+  },
+  {
+    "id": "q3",
+    "name": "Tokbokki & Kimbap Hana",
+    "district": "Quận 3",
+    "categories": ["món hàn", "đồ nước"],
+    "rating": 4.2,
+    "priceLevel": 2,
+    "address": "45 Pasteur, Quận 3",
+    "phone": "+84987654321"
+  },
+  {
+    "id": "q5",
+    "name": "Gà Rán Ròn Rụm",
+    "district": "Quận 5",
+    "categories": ["đồ khô", "ăn nhanh"],
+    "rating": 4.0,
+    "priceLevel": 1,
+    "address": "88 Trần Hưng Đạo, Quận 5"
+  },
+  {
+    "id": "q7",
+    "name": "Lẩu Thái Chua Cay",
+    "district": "Quận 7",
+    "categories": ["đồ nước", "lẩu"],
+    "rating": 4.7,
+    "priceLevel": 3,
+    "address": "17 Nguyễn Thị Thập, Quận 7",
+    "featured": true
+  },
+  {
+    "id": "tb",
+    "name": "Trà Sữa Béo Bự",
+    "district": "Tân Bình",
+    "categories": ["đồ uống", "ăn vặt"],
+    "rating": 4.1,
+    "priceLevel": 1,
+    "address": "12 Cộng Hòa, Tân Bình"
+  },
+  {
+    "id": "bt",
+    "name": "Bánh Tráng Trộn Chị Hai",
+    "district": "Bình Thạnh",
+    "categories": ["đồ khô", "ăn vặt"],
+    "rating": 4.6,
+    "priceLevel": 1,
+    "address": "5B Điện Biên Phủ, Bình Thạnh"
+  },
+  {
+    "id": "pn",
+    "name": "Phở Bò Tái Gầu",
+    "district": "Phú Nhuận",
+    "categories": ["đồ nước", "món việt"],
+    "rating": 4.8,
+    "priceLevel": 2,
+    "address": "90 Phan Xích Long, Phú Nhuận"
+  },
+  {
+    "id": "td",
+    "name": "Bánh Mì Thịt Nướng",
+    "district": "Thủ Đức",
+    "categories": ["đồ khô", "món việt"],
+    "rating": 4.3,
+    "priceLevel": 1,
+    "address": "22 Võ Văn Ngân, Thủ Đức"
+  }
+]
+
