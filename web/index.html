@@ -8,112 +8,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles.css" />
-</head>
+></head>
 <body>
-	<header class="site-header">
-		<h1>Chọn Quán Ăn</h1>
-	</header>
-	<main class="container">
-		<section class="hero">
-			<div class="hero-left">
-				<h2>Hôm nay ăn gì?</h2>
-				<p>Trang chọn quán trẻ trung dành cho hai bạn khi chưa biết ăn gì. Lọc theo quận, thể loại, xem khoảng cách và chỉ đường nhanh.</p>
-				<div class="hero-actions">
-					<button id="randomBtn">Gợi ý ngẫu nhiên</button>
-					<button id="locateBtn" class="secondary">Lấy vị trí của tôi</button>
-				</div>
-			</div>
-			<div class="hero-right">
-				<div class="hero-card">
-					<p>Thêm ảnh, giá, địa chỉ… vào dữ liệu của bạn để xem đẹp nhất.</p>
-				</div>
-			</div>
-		</section>
-		<section class="controls" aria-label="Bộ lọc">
-			<div class="control">
-				<label for="districtSelect">Quận/Huyện</label>
-				<select id="districtSelect">
-					<option value="">Tất cả</option>
-				</select>
-			</div>
-			<div class="control">
-				<label for="categorySelect">Thể loại</label>
-				<select id="categorySelect">
-					<option value="">Tất cả</option>
-				</select>
-			</div>
-			<div class="control search">
-				<label for="searchInput">Tìm kiếm</label>
-				<input id="searchInput" type="search" placeholder="Tên quán, món, địa chỉ..." />
-			</div>
-			<div class="control actions">
-				<label for="sortSelect">Sắp xếp</label>
-				<div class="action-row">
-					<select id="sortSelect">
-						<option value="default">Mặc định</option>
-						<option value="nearby">Gần tôi</option>
-					</select>
-					<button id="clearBtn" class="secondary">Xóa lọc</button>
-				</div>
-			</div>
-		</section>
-
-		<section class="results" aria-live="polite">
-			<ul id="restaurantList" class="cards"></ul>
-		</section>
-
-		<section class="map-panel">
-			<h3>Bản đồ</h3>
-			<iframe id="mapFrame" title="Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Vietnam&z=5&output=embed"></iframe>
-		</section>
-	</main>
-
-	<template id="restaurantItemTemplate">
-		<li class="card">
-			<div class="thumb"></div>
-			<div class="card-main">
-				<div class="card-header">
-					<h3 class="card-title"></h3>
-					<span class="badge"></span>
-				</div>
-				<p class="card-meta"></p>
-				<p class="card-desc"></p>
-				<div class="chips">
-					<span class="chip price"></span>
-					<span class="chip distance"></span>
-				</div>
-			</div>
-			<div class="card-actions">
-				<button class="detailsBtn">Chi tiết</button>
-				<button class="mapBtn secondary">Xem bản đồ</button>
-				<button class="directionsBtn">Chỉ đường</button>
-				<button class="selectBtn">Chọn quán này</button>
-			</div>
-		</li>
-	</template>
-
-	<div id="detailModal" class="modal" aria-hidden="true">
-		<div class="modal-backdrop"></div>
-		<div class="modal-dialog" role="dialog" aria-modal="true">
-			<button class="modal-close" aria-label="Đóng">✕</button>
-			<div class="modal-body">
-				<div class="modal-thumb"></div>
-				<h3 class="modal-title"></h3>
-				<p class="modal-meta"></p>
-				<p class="modal-desc"></p>
-				<div class="modal-prices"></div>
-				<div class="modal-actions">
-					<a class="modal-map secondary" target="_blank" rel="noopener">Xem trên Google Maps</a>
-					<a class="modal-dir" target="_blank" rel="noopener">Chỉ đường</a>
-					<button class="modal-select">Chọn quán này</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer class="site-footer">
-		<p>Made with ❤️ for chọn quán ăn nhanh chóng.</p>
-	</footer>
-	<script type="module" src="./app.js"></script>
+	<div id="root"></div>
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel" data-presets="react,env" src="./app.jsx"></script>
 </body>
 </html>
