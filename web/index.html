@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Chọn Quán Ăn</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<h1>Chọn Quán Ăn</h1>
+	</header>
+	<main class="container">
+		<section class="controls" aria-label="Bộ lọc">
+			<div class="control">
+				<label for="districtSelect">Quận/Huyện</label>
+				<select id="districtSelect">
+					<option value="">Tất cả</option>
+				</select>
+			</div>
+			<div class="control">
+				<label for="categorySelect">Thể loại</label>
+				<select id="categorySelect">
+					<option value="">Tất cả</option>
+				</select>
+			</div>
+			<div class="control search">
+				<label for="searchInput">Tìm kiếm</label>
+				<input id="searchInput" type="search" placeholder="Tên quán, món, địa chỉ..." />
+			</div>
+			<div class="control actions">
+				<button id="clearBtn" class="secondary">Xóa lọc</button>
+			</div>
+		</section>
+
+		<section class="results" aria-live="polite">
+			<ul id="restaurantList" class="cards"></ul>
+		</section>
+	</main>
+
+	<template id="restaurantItemTemplate">
+		<li class="card">
+			<div class="card-main">
+				<div class="card-header">
+					<h3 class="card-title"></h3>
+					<span class="badge"></span>
+				</div>
+				<p class="card-meta"></p>
+				<p class="card-desc"></p>
+			</div>
+			<div class="card-actions">
+				<button class="selectBtn">Chọn quán này</button>
+			</div>
+		</li>
+	</template>
+
+	<footer class="site-footer">
+		<p>Made with ❤️ for chọn quán ăn nhanh chóng.</p>
+	</footer>
+	<script type="module" src="./app.js"></script>
+</body>
+</html>
